@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Golsigthtful</title>
+</head>
+<body>
+    <div>
+        <div class=flex>
+         <img src="close.png" alt="">
+         <h2>Write Review</h2>
+        </div>
+        
+        <div class=center-content id="center-content">
+            <h2 class="font-size">Rate your overall experience</h2> 
+             
+            <div  class="star-wrapper">
+                <a href="#"  id="star-wrapper5" class="fas fa-star s1" onclick="liked();store('Stars-5');animation5()"></a>
+                <a href="#"  id="star-wrapper4" class="fas fa-star s2" onclick="liked();store('Stars-4');animation4()"></a>
+                <a href="#"  id="star-wrapper3" class="fas fa-star s3" onclick="improve();store('Stars-3');animation3()"></a>
+                <a href="#"  id="star-wrapper2" class="fas fa-star s4" onclick="improve();store('Stars-2');animation2()"></a>
+                <a href="#"  id="star-wrapper1" class="fas fa-star s5" onclick="improve();store('Stars-1');animation1()"></a>
+                
+            </div>
+            <script src="https://kit.fontawesome.com/5ea815c1d0.js"></script>
+           
+            <div id="afterEventLiked" class="afterEventLiked">
+
+                <h2 id="afterEventHeadingLiked">What did you like the most</h1>
+                
+                <div class="buttons">
+                    <button id="afterEventButton1" onclick="changeCSS(event);store('Quality')">Quality</button>
+                    <button id="afterEventButton2" onclick="changeCSS(event);store('Comfortable')">Comfortable</button>
+                    <button id="afterEventButton3" onclick="changeCSS(event);store('Fit')">Fit</button>
+                    <button id="afterEventButton4" onclick="changeCSS(event);store('Color')">Color</button>
+                    <button id="afterEventButton5" onclick="changeCSS(event);store('Delivery')">Delivery</button>
+                    <button id="afterEventButton6" onclick="changeCSS(event);store('Design')">Design</button>
+                    <button id="afterEventButton7" onclick="changeCSS(event);store('Customer Support')">Customer Support</button>
+                    <button id="afterEventButton8" onclick="changeCSS(event);store('All of the above')">All of the above</button>
+                </div>
+                <div class="footer">
+                    <a href="#" id="backButton">Back</button>
+                    <a href="feedback.html" id="nextButton">Next</a>
+                </div>
+            </div>
+            <div id="afterEventImprove" class="afterEventImprove">
+                <h2 id="afterEventHeadingImprove">What can we improve</h1>
+                <input class="text-area" type="text-area" placeholder="Enter here" value="" onchange="storeImprove(this.value)">
+                <div class="sub">
+                  <input type="submit" value="Submit">
+                </div>
+                <div class="footer">   
+                    <a href="#" id="backButton">Back</button>                 
+                    <a href="feedback.html" id="nextButton">Next</a>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
